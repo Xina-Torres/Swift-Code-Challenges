@@ -15,18 +15,18 @@ for i in 1...10{
     }
 }
 
-for j in 1...10{
+for j in 1...15{
     var div3 = j % 3
     var div5 = j % 5
     var div = (div3, div5)
     switch(div){
-        case(0,_):
-            print("FIZZ")
-        case(_,0):
-            print("BUZZ")
-        case(0,0):
-            print("FIZZ BUZZ")
-        case(_,_):
-            print(j)
+    case(0,0):
+        print("FIZZ BUZZ")
+    case(0,_):
+        print("FIZZ")
+    case(_,0):
+        print("BUZZ")
+    case(_,_):
+        print(j)
     }
 }
